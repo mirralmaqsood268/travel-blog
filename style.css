@@ -1,0 +1,46 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; background: #fff8f0; color: #333; transition: background .3s, color .3s; }
+
+/* Navbar */
+.navbar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 1rem; background: teal; color: white; }
+.navbar input { padding: .5rem; border-radius: 5px; border: none; }
+.filters { display: flex; gap: .5rem; }
+.filter-btn { padding: .5rem 1rem; border: none; border-radius: 5px; cursor: pointer; background: orange; color: white; transition: .3s; }
+.filter-btn:hover { background: darkorange; }
+
+/* Hero */
+.hero { background: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") no-repeat center/cover; color: white; text-align: center; padding: 6rem 2rem; }
+.hero h1 { font-size: 3rem; }
+.hero p { margin-top: 1rem; font-size: 1.2rem; }
+
+/* Stories */
+.stories { padding: 2rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 1.5rem; }
+.card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform .3s; }
+.card img { width: 100%; height: 200px; object-fit: cover; }
+.card:hover { transform: scale(1.05); }
+.card h3 { padding: .5rem; }
+.card p { padding: 0 .5rem 1rem; }
+.card button { margin: .5rem; padding: .5rem 1rem; border: none; background: tomato; color: white; border-radius: 5px; cursor: pointer; }
+
+/* Newsletter */
+.newsletter { background: #ffe0b2; text-align: center; padding: 2rem; }
+.newsletter input { padding: .5rem; width: 250px; max-width: 80%; border: none; border-radius: 5px; margin-top: 1rem; }
+.newsletter button { padding: .5rem 1rem; margin-left: .5rem; border: none; background: orangered; color: white; border-radius: 5px; }
+
+/* Footer */
+.footer { background: teal; color: white; text-align: center; padding: 1.5rem; }
+.footer .socials { margin-top: 1rem; display: flex; justify-content: center; gap: 1rem; }
+.footer .socials img { width: 30px; height: 30px; filter: brightness(0) invert(1); transition: transform .3s; }
+.footer .socials img:hover { transform: scale(1.2); }
+
+/* Modal */
+.modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background: rgba(0,0,0,0.7); }
+.modal-content { background: #fff; margin: 5% auto; padding: 20px; border-radius: 10px; width: 80%; max-height: 80vh; overflow-y: auto; }
+.close { float: right; font-size: 28px; cursor: pointer; }
+
+/* Dark Mode */
+body.dark { background: #121212; color: #f5f5f5; }
+body.dark .navbar { background: #222; }
+body.dark .footer { background: #222; }
+body.dark .card { background: #1e1e1e; color: #eee; }

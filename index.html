@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WanderWorld</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">🌍 WanderWorld</div>
+    <input type="text" id="search" placeholder="Search destinations...">
+    <div class="filters">
+      <button class="filter-btn" data-category="all">All</button>
+      <button class="filter-btn" data-category="Asia">Asia</button>
+      <button class="filter-btn" data-category="Europe">Europe</button>
+      <button class="filter-btn" data-category="America">America</button>
+      <button class="filter-btn" data-category="Africa">Africa</button>
+    </div>
+    <button id="modeToggle">🌙</button>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <h1>Explore the World</h1>
+    <p>One Journey at a Time ✈️</p>
+  </header>
+
+  <!-- Stories -->
+  <section class="stories">
+    <h2>Travel Stories</h2>
+    <div class="grid">
+      <div class="card" data-category="Asia">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Bali">
+        <h3>Bali Adventure</h3>
+        <p>Tropical vibes, beaches, and temples 🌴</p>
+        <button class="read-btn" data-story="bali">Read Story</button>
+      </div>
+      <div class="card" data-category="Europe">
+        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" alt="Paris">
+        <h3>Paris Romance</h3>
+        <p>The city of love, lights, and croissants 🥐</p>
+        <button class="read-btn" data-story="paris">Read Story</button>
+      </div>
+      <div class="card" data-category="America">
+        <img src="https://images.unsplash.com/photo-1533106418989-88406c7cc8c8" alt="New York">
+        <h3>New York Life</h3>
+        <p>Skyscrapers, Times Square, and endless energy 🌆</p>
+        <button class="read-btn" data-story="newyork">Read Story</button>
+      </div>
+      <div class="card" data-category="Africa">
+        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2" alt="Safari">
+        <h3>Safari Journey</h3>
+        <p>Wildlife, nature, and African sunsets 🦁</p>
+        <button class="read-btn" data-story="safari">Read Story</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <h2>📩 Stay Updated!</h2>
+    <p>Subscribe to get the latest travel stories and tips in your inbox.</p>
+    <form>
+      <input type="email" placeholder="Enter your email">
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 WanderWorld. All rights reserved.</p>
+    <div class="socials">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="storyModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="storyDetails"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
